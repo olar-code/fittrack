@@ -1,0 +1,99 @@
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  background: #0b1220;
+  color: #e8eefc;
+}
+.app {
+  max-width: 520px;
+  margin: 0 auto;
+  padding: 16px;
+}
+.header h1 { margin: 8px 0 0; font-size: 28px; }
+.sub { margin: 6px 0 14px; opacity: 0.85; }
+
+.card {
+  background: #121b2e;
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 14px;
+  padding: 14px;
+  margin: 12px 0;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+}
+
+label { display: block; margin-top: 10px; margin-bottom: 6px; opacity: 0.9; }
+input {
+  width: 100%;
+  padding: 12px;
+  border-radius: 12px;
+  border: 1px solid rgba(255,255,255,0.12);
+  background: #0e1628;
+  color: #e8eefc;
+  outline: none;
+}
+input:focus { border-color: rgba(120,170,255,0.6); }
+
+button {
+  width: 100%;
+  margin-top: 12px;
+  padding: 12px 14px;
+  border: none;
+  border-radius: 12px;
+  background: #2d7dff;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+}
+button:active { transform: scale(0.99); }
+
+.row { display: flex; align-items: center; justify-content: space-between; gap: 10px; }
+.ghost {
+  width: auto;
+  padding: 10px 12px;
+  background: transparent;
+  border: 1px solid rgba(255,255,255,0.18);
+}
+.msg { margin: 10px 0 0; min-height: 18px; opacity: 0.9; }
+
+.list { margin-top: 10px; display: grid; gap: 10px; }
+.item {
+  padding: 12px;
+  border-radius: 12px;
+  background: #0e1628;
+  border: 1px solid rgba(255,255,255,0.08);
+}
+.itemTop { display:flex; justify-content:space-between; gap: 10px; }
+.badge { font-size: 12px; opacity: 0.85; }
+.kpi { margin-top: 6px; display:flex; gap: 10px; flex-wrap: wrap; }
+.pill {
+  font-size: 13px;
+  padding: 6px 10px;
+  border-radius: 999px;
+  background: rgba(45,125,255,0.14);
+  border: 1px solid rgba(45,125,255,0.25);
+}
+
+.stats {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin-top: 10px;
+}
+.statBox {
+  padding: 12px;
+  border-radius: 12px;
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255,255,255,0.08);
+}
+.statBox b { display:block; font-size: 18px; margin-top: 4px; }
+.footer { text-align: center; opacity: 0.75; margin-top: 10px; }
+
+.h3 { margin: 12px 0 8px; font-size: 16px; opacity: 0.9; }
+.chartWrap{
+  padding: 10px;
+  border-radius: 12px;
+  background: #0e1628;
+  border: 1px solid rgba(255,255,255,0.08);
+}
+canvas { width: 100%; display: block; }

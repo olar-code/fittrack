@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="uk">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Схуднення — трекер</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#2d7dff">
+</head>
+<body>
+  <div class="app">
+    <header class="header">
+      <h1>Трекер схуднення</h1>
+      <p class="sub">Вага + калорії (зберігається на телефоні)</p>
+    </header>
+
+    <section class="card">
+      <h2>Додати запис</h2>
+
+      <label>Дата</label>
+      <input id="date" type="date" />
+
+      <label>Вага (кг)</label>
+      <input id="weight" type="number" step="0.1" placeholder="Напр. 93.4" />
+
+      <label>Калорії за день</label>
+      <input id="calories" type="number" step="1" placeholder="Напр. 1600" />
+
+      <button id="addBtn">➕ Додати</button>
+      <p id="msg" class="msg"></p>
+    </section>
+
+    <section class="card">
+      <div class="row">
+        <h2>Історія</h2>
+        <button id="clearBtn" class="ghost">Очистити</button>
+      </div>
+
+      <div id="stats" class="stats"></div>
+      <div id="stats" class="stats"></div>
+
+<h3 class="h3">Графік ваги</h3>
+<div class="chartWrap">
+  <canvas id="weightChart" height="170"></canvas>
+</div>
+
+<div id="list" class="list"></div>
+      <div id="list" class="list"></div>
+    </section>
+
+    <footer class="footer">
+      <small>Працює офлайн • Дані тільки на твоєму телефоні</small>
+    </footer>
+  </div>
+
+  <script src="app.js"></script>
+<script>
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('service-worker.js');
+}
+</script>
+</body>
+</html>
