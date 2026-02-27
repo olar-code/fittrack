@@ -8,6 +8,7 @@ const urlsToCache = [
   "/fittrack/manifest.json",
   "/fittrack/icon-192.png",
   "/fittrack/icon-512.png"
+  "/fittrack/service-worker.js",
 ];
 
 self.addEventListener("install", event => {
