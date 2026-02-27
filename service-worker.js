@@ -1,4 +1,4 @@
-const CACHE_NAME = "fittracker-v1";
+const CACHE_NAME = "fittracker-v2";
 
 const urlsToCache = [
   "/fittrack/",
@@ -7,8 +7,8 @@ const urlsToCache = [
   "/fittrack/app.js",
   "/fittrack/manifest.json",
   "/fittrack/icon-192.png",
-  "/fittrack/icon-512.png"
-  "/fittrack/service-worker.js",
+  "/fittrack/icon-512.png",
+  "/fittrack/service-worker.js"
 ];
 
 self.addEventListener("install", event => {
